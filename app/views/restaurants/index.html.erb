@@ -1,0 +1,11 @@
+<h1>Mon index restaurants</h1>
+
+<p>j'affiche tous mes restaurants</p>
+<div>
+  <% @restaurants.each do |restaurant| %>
+    <%= restaurant.name %>
+    <%= restaurant.category %>
+    <%= restaurant.address %>
+    <%= restaurant.phone_number %>
+<% end %>
+</div>
